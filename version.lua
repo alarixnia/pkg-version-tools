@@ -20,27 +20,27 @@ local function compare_parts(s1, s2)
 end
 
 local function test(v1, v2, expect)
-		local cmp = compare(v1, v2)
-		if cmp ~= expect then print("FAIL") end
-		if cmp == 0 then print(string.format("%s == %s", v1, v2))
-		elseif cmp == 1 then print(string.format("%s > %s", v1, v2))
-		elseif cmp == -1 then print(string.format("%s < %s", v1, v2)) end
+	local cmp = compare(v1, v2)
+	if cmp ~= expect then print("FAIL") end
+	if cmp == 0 then print(string.format("%s == %s", v1, v2))
+	elseif cmp == 1 then print(string.format("%s > %s", v1, v2))
+	elseif cmp == -1 then print(string.format("%s < %s", v1, v2)) end
 end
 
 local function test_run()
-		test("1.25.12", "1.25.8", 1)
-		test("1.0", "1.0", 0)
-		test("1.0rc1", "1.0rc2", -1)
-		test("9a", "9c", -1)
-		test("1.1.0", "1.1.1", -1)
-		test("1.1.0.1", "2.1.1", -1)
-		test("2.1.1", "1.1.0.1", 1)
-		test("2.1.0", "1.2.4", 1)
-		test("2.0.0.1", "2.0.0", 1)
-		test("2.0.0", "2.0.0.1", -1)
-		test("2.0.1", "2.0.1a", -1)
-		test("2.0.1a", "2.0.1", 1)
-		test("20.0.0", "2.0.0", 1)
+	test("1.25.12", "1.25.8", 1)
+	test("1.0", "1.0", 0)
+	test("1.0rc1", "1.0rc2", -1)
+	test("9a", "9c", -1)
+	test("1.1.0", "1.1.1", -1)
+	test("1.1.0.1", "2.1.1", -1)
+	test("2.1.1", "1.1.0.1", 1)
+	test("2.1.0", "1.2.4", 1)
+	test("2.0.0.1", "2.0.0", 1)
+	test("2.0.0", "2.0.0.1", -1)
+	test("2.0.1", "2.0.1a", -1)
+	test("2.0.1a", "2.0.1", 1)
+	test("20.0.0", "2.0.0", 1)
 end
 
 function compare(v1, v2)
@@ -57,11 +57,10 @@ end
 
 function valid(v)
 	v = v:lower()
-	if v:match("svn") then return false end
-	if v:match("rc") then return false end
-	if v:match("dev") then return false end
-	if v:match("alpha") then return false end
-	if v:match("beta") then return false end
+	local bad_matches = { "svn", "rc", "dev", "alpha", "beta" }
+	for i = 1, #bad_matches do
+		if v:match(bad_matches[i]) then return false end
+	end
 	return true
 end
 
