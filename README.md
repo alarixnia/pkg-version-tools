@@ -5,6 +5,7 @@ Tools for identifying when stuff in pkgsrc needs updating.
 *Current data sources*: Wikidata, Freshcode, GitHub
 
 Please be cautious of excessively querying these APIs.
+GitHub is especially likely to rate limit, so Wikidata is preferred when possible.
 
 Requirements
 ------------
