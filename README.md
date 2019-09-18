@@ -6,7 +6,7 @@ Tools for identifying when stuff in pkgsrc needs updating.
 
 Please be cautious of excessively querying these APIs.
 
-**Requirements**: `textproc/lua-cjson`, `www/lua-curl`,
+**Requirements**: `textproc/lua-cjson`, `www/lua-curl`
 
 **For gen_todo**: `pkgtools/pkgsrc-todo`
 
