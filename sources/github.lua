@@ -19,7 +19,7 @@ local function fetch_json(repo, request)
 	return json.decode(output)
 end
 
-function get_version_tag(repo)
+local function get_version_tag(repo)
 	local best_ver = "0"
 	local json, err = fetch_json(repo, "tags")
 	if json == nil or json.message ~= nil then
@@ -39,7 +39,7 @@ function get_version_tag(repo)
 	return best_ver ~= "0" and best_ver or nil
 end
 
-function get_version_release(repo)
+local function get_version_release(repo)
 	local json, err = fetch_json(repo, "releases/latest")
 	if json == nil then
 		print(err)
