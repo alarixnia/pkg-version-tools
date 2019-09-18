@@ -9,12 +9,15 @@ local function fetch_json(repo, request)
 	local header_queue = {}
 	local queue = {}
 	local url = string.format("https://api.github.com/repos/%s/%s", repo, request)
+	local headers = {
+		"Accept: application/json",
+		"Authorization: token " .. token,
+		"User-Agent: pkg-version-tools",
+	}
 	local request = curl.easy()
 		:setopt_customrequest("GET")
 		:setopt_url(url)
-		:setopt_httpheader({"Accept: application/json"})
-		:setopt_httpheader({"Authorization: token " .. token})
-		:setopt_httpheader({"User-Agent: pkg-version-tools"})
+		:setopt_httpheader(headers)
 		:setopt_writefunction(function(buffer)
 			table.insert(queue, buffer)
 		end)
