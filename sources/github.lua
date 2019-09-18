@@ -28,7 +28,6 @@ local function get_version_tag(repo)
 	end
 	for i = 1, #json do
 		local v = json[i].name
-		print(v)
 		if version.valid(v) then
 			v = version.sanititze(v)
 			if version.compare(best_ver, v) < 0 then
