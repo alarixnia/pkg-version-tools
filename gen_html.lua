@@ -18,10 +18,10 @@ local package_template = [[
 <td>
 {{#other_versions}}
 {{#newest}}
-<span class="new">{{version}}</span> ({{source}})
+<span class="new">{{version}}</span> <small>({{source}})</small>
 {{/newest}}
 {{^newest}}
-<span class="old">{{version}}</span> ({{source}})
+<span class="old">{{version}}</span> <small>({{source}})</small>
 {{/newest}}
 {{/other_versions}}
 </td>
