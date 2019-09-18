@@ -4865,6 +4865,10 @@ return {
 	{
 		github = "monsieurvideo/get-flash-videos"
 	},
+	["net/get_iplayer"] =
+	{
+		github = "get-iplayer/get_iplayer"
+	},
 	["net/go-dns"] =
 	{
 		github = "miekg/dns"
