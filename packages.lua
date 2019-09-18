@@ -17,6 +17,10 @@ return {
 		wikidata = "Q947786",
 		freshcode = "exaile"
 	},
+	["audio/faad2"] =
+	{
+		github = "knik0/faad2"
+	},
 	["audio/flac"] =
 	{
 		wikidata = "Q219848",
@@ -146,6 +150,10 @@ return {
 	{
 		wikidata = "Q596918"
 	},
+	["emulators/melonds"] =
+	{
+		github = "Arisotura/melonDS"
+	},
 	["emulators/qemu"] =
 	{
 		wikidata = "Q624699",
@@ -182,6 +190,10 @@ return {
 	["games/powder-toy"] =
 	{
 		wikidata = "Q10853009"
+	},
+	["games/redeclipse"] =
+	{
+		wikidata = "Q3931423"
 	},
 	["graphics/GraphicsMagick"] =
 	{
@@ -282,6 +294,10 @@ return {
 		wikidata = "Q5628948",
 		freshcode = "haproxy"
 	},
+	["net/nmap"] =
+	{
+		wikidata = "Q623332"
+	},
 	["net/remmina"] =
 	{
 		wikidata = "Q82148"
@@ -297,6 +313,10 @@ return {
 	["net/transmission"] =
 	{
 		wikidata = "Q875055"
+	},
+	["print/poppler"] =
+	{
+		wikidata = "Q1347022"
 	},
 	["security/gnutls"] =
 	{
@@ -315,6 +335,10 @@ return {
 	{
 		wikidata = "Q6542808"
 	},
+	["textproc/lua-lustache"] =
+	{
+		github = "Olivine-Labs/lustache"
+	},
 	["www/gitea"] =
 	{
 		wikidata = "Q28714270"
@@ -324,13 +348,29 @@ return {
 		wikidata = "Q217765",
 		freshcode = "lighttpd"
 	},
+	["www/lua-curl"] =
+	{
+		github = "Lua-cURL/Lua-cURLv3"
+	},
 	["www/seamonkey"] =
 	{
 		wikidata = "Q156197",
 		freshcode = "seamonkey"
 	},
+	["www/snownews"] =
+	{
+		github = "kouya/snownews"
+	},
 	["www/thttpd"] =
 	{
 		wikidata = "Q3266371"
-	}
+	},
+	["x11/wxGTK30"] =
+	{
+		wikidata = "Q284982"
+	},
+	["x11/gtk3"] =
+	{
+		wikidata = "Q189464"
+	},
 }
