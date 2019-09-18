@@ -4823,7 +4823,7 @@ return {
 	},
 	["net/dnscrypt-proxy2"] =
 	{
-		github = "jedisct1/dnscrypt-proxy"
+		github = "DNSCrypt/dnscrypt-proxy"
 	},
 	["net/erlang-esip"] =
 	{
