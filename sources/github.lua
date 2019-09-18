@@ -86,7 +86,7 @@ function get_version(repo)
 	return nil
 end
 
-print(get_version(arg[1]))
+--print(get_version(arg[1]))
 
 return {
 	get_version = get_version
