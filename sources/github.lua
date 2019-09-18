@@ -2,6 +2,8 @@ local curl = require("cURL.safe")
 local json = require("cjson.safe")
 local version = dofile("version.lua")
 
+local token = os.getenv("GITHUB_TOKEN")
+
 local function fetch_json(repo, request)
 	local queue = {}
 	local url = string.format("https://api.github.com/repos/%s/%s", repo, request)
@@ -9,6 +11,7 @@ local function fetch_json(repo, request)
 		:setopt_customrequest("GET")
 		:setopt_url(url)
 		:setopt_httpheader({"Accept: application/json"})
+		:setopt_httpheader({"Authorization: token " .. token})
 		:setopt_httpheader({"User-Agent: pkg-version-tools"})
 		:setopt_writefunction(function(buffer)
 			table.insert(queue, buffer)
@@ -22,14 +25,16 @@ end
 local function get_version_tag(repo)
 	local best_ver = "0"
 	local json, err = fetch_json(repo, "tags")
-	if json == nil or json.message ~= nil then
-		print(json.message ~= nil and json.message or err)
+	if json == nil then
+		return nil
+	end
+	if json.message ~= nil then
 		return nil
 	end
 	for i = 1, #json do
 		local v = json[i].name
 		if version.valid(v) then
-			v = version.sanititze(v)
+			v = version.sanitize(v)
 			if version.compare(best_ver, v) < 0 then
 				best_ver = v
 			end
@@ -39,11 +44,8 @@ local function get_version_tag(repo)
 end
 
 local function get_version_release(repo)
-	local json, err = fetch_json(repo, "releases/latest")
-	if json == nil then
-		print(err)
-		return nil
-	end
+	local json = fetch_json(repo, "releases/latest")
+	if json == nil then return nil end
 	if json.tag_name ~= nil and version.valid(json.tag_name) then
 		return version.sanitize(json.tag_name)
 	end

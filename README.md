@@ -29,6 +29,13 @@ Commands take a list of packages in the form of category/name. Comments begin wi
 
 Add new packages with their data sources to packages.lua.
 
+GitHub
+------
+
+You will need a personal access token: https://github.com/settings/tokens
+
+Set the environment variable `GITHUB_TOKEN` to your token.
+
 Examples
 --------
 
