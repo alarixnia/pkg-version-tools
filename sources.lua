@@ -1,6 +1,7 @@
 local pkgsrc = dofile("sources/pkgsrc.lua")
 local wikidata = dofile("sources/wikidata.lua")
 local freshcode = dofile("sources/freshcode.lua")
+local github = dofile("sources/github.lua")
 
 function get_versions(pkg, sources)
 	local tab = {}
@@ -12,6 +13,10 @@ function get_versions(pkg, sources)
 	if sources.freshcode then
 		local v = freshcode.get_version(sources.freshcode)
 		if v ~= nil then tab["freshcode"] = v end
+	end
+	if sources.github then
+		local v = github.get_version(sources.github)
+		if v ~= nil then tab["github"] = v end
 	end
 	return tab
 end

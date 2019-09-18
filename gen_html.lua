@@ -7,14 +7,24 @@ local util = dofile("util.lua")
 local package_template = [[
 <tr>
 <td><a href="http://pkgsrc.se/{{{name}}}">{{name}}</a></td>
-{{#versions}}
+{{#pkgsrc_version}}
 {{#newest}}
 <td class="new">{{version}}</td>
 {{/newest}}
 {{^newest}}
 <td class="old"><strong>{{version}}</strong></td>
 {{/newest}}
-{{/versions}}
+{{/pkgsrc_version}}
+<td>
+{{#other_versions}}
+{{#newest}}
+<span class="new">{{version}}</span> ({{source}})
+{{/newest}}
+{{^newest}}
+<span class="old">{{version}}</span> ({{source}})
+{{/newest}}
+{{/other_versions}}
+</td>
 </tr>
 ]]
 
@@ -46,7 +56,6 @@ table {
 th {
 	text-align: left;
 	font-weight: bold;
-	min-width: 120px;
 }
 
 tbody tr:hover {
@@ -69,9 +78,8 @@ td {
 <thead>
 <tr>
 <th>Package</th>
-{{#repos}}
-<th>{{name}}</th>
-{{/repos}}
+<th>pkgsrc</th>
+<th>others</th>
 </tr>
 </thead>
 <tbody>
@@ -82,11 +90,6 @@ td {
 </html>
 ]]
 
-local repos = {
-	{ name = "pkgsrc" },
-	{ name = "wikidata" },
-	{ name = "freshcode" }
-}
 local pkg_names = util.read_pkg_names(arg[1])
 local rendered_pkgs = {}
 for i = 1, #pkg_names do
@@ -99,21 +102,28 @@ for i = 1, #pkg_names do
 			highest_v = v
 		end
 	end
-	local version_data = {}
-	for i = 1, #repos do
-		local v = versions[repos[i].name]
-		table.insert(version_data, {
-			newest = (v == highest_v),
-			version = v
-		})
+	local pkgsrc_version = versions["pkgsrc"]
+	local pkgsrc_data = {
+		newest = (pkgsrc_version == highest_v),
+		version = pkgsrc_version
+	}
+	local other_versions = {}
+	for k, v in pairs(versions) do
+		if k ~= "pkgsrc" then
+			table.insert(other_versions, {
+				source = k,
+				newest = (v == highest_v),
+				version = v
+			})
+		end
 	end
 	table.insert(rendered_pkgs, lustache:render(package_template, {
 		name = pkg_names[i],
-		versions = version_data
+		pkgsrc_version = pkgsrc_data,
+		other_versions = other_versions
 	}))
 end
 local page = {
-	repos = repos,
 	packages = table.concat(rendered_pkgs, "")
 }
 print(lustache:render(page_template, page))

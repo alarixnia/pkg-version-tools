@@ -2,7 +2,7 @@
 
 Tools for identifying when stuff in pkgsrc needs updating.
 
-*Current data sources*: Wikidata, Freshcode
+*Current data sources*: Wikidata, Freshcode, GitHub
 
 Please be cautious of excessively querying these APIs.
 
