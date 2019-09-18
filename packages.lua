@@ -1,7 +1,7 @@
 return {
 	["devel/glib2"] =
 	{
-		github = "GNOME/glib"
+		wikidata = "Q1137964"
 	},
 	["devel/gobject-introspection"] =
 	{
