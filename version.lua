@@ -68,7 +68,9 @@ function sanitize(v)
 	if v:sub(1, 1) == "v" then
 		v = v:sub(2)
 	end
-	return v:gsub("-", ".")
+	return v:gsub("[-_]", ".")
+			:lower()
+			:gsub("^[-_A-Za-z.]*", "")
 end
 
 --test_run()

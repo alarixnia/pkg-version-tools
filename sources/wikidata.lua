@@ -21,9 +21,11 @@ local function get_preferred_claim(claimset)
 	local best_ver = nil
 	for i = 1, #claimset do
 		local ver = claimset[i].mainsnak.datavalue.value
-		ver = version.sanitize(ver)
-		if version.valid(ver) and (best_ver == nil or version.compare(best_ver, ver) < 0) then
-			best_ver = ver
+		if version.valid(ver) then
+			ver = version.sanitize(ver)
+			if best_ver == nil or version.compare(best_ver, ver) < 0 then
+				best_ver = ver
+			end
 		end
 	end
 	return best_ver
