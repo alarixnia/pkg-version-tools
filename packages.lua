@@ -1,4 +1,16 @@
 return {
+	["devel/glib2"] =
+	{
+		github = "GNOME/glib"
+	},
+	["devel/gobject-introspection"] =
+	{
+		github = "GNOME/gobject-introspection"
+	},
+	["devel/libffi"] =
+	{
+		github = "libffi/libffi"
+	},
 	["audio/audacious"] =
 	{
 		wikidata = "Q758685"
@@ -58,6 +70,10 @@ return {
 	["audio/musicpd"] =
 	{
 		wikidata = "Q1257936"
+	},
+	["audio/openal-soft"] =
+	{
+		github = "kcat/openal-soft"
 	},
 	["audio/opusfile"] =
 	{
@@ -193,7 +209,7 @@ return {
 	},
 	["games/redeclipse"] =
 	{
-		wikidata = "Q3931423"
+		github = "redeclipse/base"
 	},
 	["graphics/GraphicsMagick"] =
 	{
@@ -275,6 +291,10 @@ return {
 	{
 		wikidata = "Q1457398"
 	},
+	["multimedia/gstreamer1"] =
+	{
+		github = "GStreamer/gstreamer"
+	},
 	["multimedia/libogg"] =
 	{
 		wikidata = "Q63437792"
@@ -334,6 +354,10 @@ return {
 	["textproc/libxslt"] =
 	{
 		wikidata = "Q6542808"
+	},
+	["textproc/libxml2"] =
+	{
+		wikidata = "Q306240"
 	},
 	["textproc/lua-lustache"] =
 	{
@@ -3896,6 +3920,10 @@ return {
 	["graphics/erlang-eimp"] =
 	{
 		github = "processone/eimp"
+	},
+	["graphics/exiv2"] =
+	{
+		github = "Exiv2/exiv2"
 	},
 	["graphics/f-spot"] =
 	{
