@@ -5,7 +5,7 @@ local version = dofile("version.lua")
 local token = os.getenv("GITHUB_TOKEN")
 
 local function fetch_json(repo, request)
-	local page_next = 0
+	local page_end = 0
 	local header_queue = {}
 	local queue = {}
 	local url = string.format("https://api.github.com/repos/%s/%s", repo, request)
@@ -19,31 +19,19 @@ local function fetch_json(repo, request)
 			table.insert(queue, buffer)
 		end)
 		:setopt_headerfunction(function(buffer)
-			local match = buffer:match("page=[0-9*]")
+			local match = buffer:match('page=[0-9]*>; rel="last"')
 			if match ~= nil then
-				match = match:sub(6)
-				if page_next == 0 then
-					print(match)
-					page_next = tonumber(match)
-				end
+				page_end = tonumber(match:sub(6):match("[0-9]*"))
 			end
 		end)
 	request:perform()
 	request:close()
-	local headers = table.concat(header_queue, "")
 	local output = table.concat(queue, "")
 	local json, err = json.decode(output)
-	return json, err, page_next
+	return json, err, page_end
 end
 
-local function get_version_tag(best_ver, repo, page)
-	local json, err, page_next = fetch_json(repo, string.format("tags?page=%d", page))
-	if json == nil then
-		return nil
-	end
-	if json.message ~= nil then
-		return nil
-	end
+local function best_in_page(json, best_ver)
 	for i = 1, #json do
 		local v = json[i].name
 		if version.valid(v) then
@@ -53,8 +41,26 @@ local function get_version_tag(best_ver, repo, page)
 			end
 		end
 	end
-	if page_next > 1 then
-		return get_version_tag(best_ver, repo, page_next)
+	return best_ver
+end
+
+local function get_version_tag(repo, best_ver, page)
+	local json, err
+	if page == nil then
+		json, err, page = fetch_json(repo, "tags?page=1")
+		page = page + 1
+	else
+		json, err = fetch_json(repo, string.format("tags?page=%d", page))
+	end
+	if json == nil then
+		return nil
+	end
+	if json.message ~= nil then
+		return nil
+	end
+	best_ver = best_in_page(json, best_ver == nil and "0" or best_ver)
+	if page > 3 then
+		return get_version_tag(repo, best_ver, page - 1)
 	end
 	return best_ver ~= "0" and best_ver or nil
 end
@@ -72,7 +78,7 @@ function get_version(repo)
 	local v
 	v = get_version_release(repo)
 	if v ~= nil then return v end
-	v = get_version_tag(repo, 1)
+	v = get_version_tag(repo)
 	if v ~= nil then return v end
 	return nil
 end
