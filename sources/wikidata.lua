@@ -17,12 +17,22 @@ local function fetch_json(entity)
 	return json.decode(table.concat(queue, ""))
 end
 
+local function valid(claim)
+	-- check that the version is not unstable
+	if claim.qualifiers ~= nil then
+		local v_type = claim.qualifiers.P548
+		if v_type ~= nil and v_type[1].datavalue.value.id == "Q21727724" then
+			return nil
+		end
+	end
+	return version.valid(claim.mainsnak.datavalue.value)
+end
+
 local function get_preferred_claim(claimset)
 	local best_ver = nil
 	for i = 1, #claimset do
-		local ver = claimset[i].mainsnak.datavalue.value
-		if version.valid(ver) then
-			ver = version.sanitize(ver)
+		if valid(claimset[i]) then
+			local ver = version.sanitize(claimset[i].mainsnak.datavalue.value)
 			if best_ver == nil or version.compare(best_ver, ver) < 0 then
 				best_ver = ver
 			end
