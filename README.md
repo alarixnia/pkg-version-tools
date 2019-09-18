@@ -2,11 +2,15 @@
 
 Tools for identifying when stuff in pkgsrc needs updating.
 
-_Current data sources_: Wikidata, Freshcode
+**Current data sources**: Wikidata, Freshcode
 
 Please be cautious of excessively querying these APIs.
 
-_Requirements_: `textproc/lua-cjson`, `www/lua-curl`, `pkgtools/pkgsrc-todo`
+**Requirements**: `textproc/lua-cjson`, `www/lua-curl`,
+
+**For gen_todo**: `pkgtools/pkgsrc-todo`
+
+**For gen_html**: `textproc/lua-lustache`
 
 Usage
 -----
@@ -22,4 +26,5 @@ Examples
 
 ```
 lua gen_todo.lua < package_list.txt
+lua gen_html.lua < package_list.txt
 ```
