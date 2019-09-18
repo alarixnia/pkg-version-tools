@@ -18,10 +18,18 @@ local function fetch_json(entity)
 end
 
 local function valid(claim)
-	-- check that the version is not unstable
+	local invalid_ids = {
+		"Q3295609",		-- beta
+		"Q2122918",		-- alpha
+		"Q1072356",		-- RC
+		"Q51930650",	-- pre-release
+		"Q21683863",	-- obsolete version
+		"Q21727724",	-- unstable version
+		"Q5209391",		-- daily build
+	}
 	if claim.qualifiers ~= nil then
 		local v_type = claim.qualifiers.P548
-		if v_type ~= nil and v_type[1].datavalue.value.id == "Q21727724" then
+		if v_type ~= nil and invalid_ids[v_type[1].datavalue.value.id] ~= nil then
 			return nil
 		end
 	end
