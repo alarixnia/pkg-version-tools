@@ -69,7 +69,6 @@ function sanitize(v)
 		v = v:sub(2)
 	end
 	return v:gsub("[-_]", ".")
-			:lower()
 			:gsub("^[-_A-Za-z.]*", "")
 end
 
