@@ -8,14 +8,12 @@ local function split(s)
 end
 
 local function compare_parts(s1, s2)
-	if #s1 > #s2 then return 1 end
-	if #s1 < #s2 then return -1 end
-	for i = 1, #s1 do
-		local c1 = s1:sub(i, i)
-		local c2 = s2:sub(i, i)
-		if c1 > c2 then return 1 end
-		if c1 < c2 then return -1 end
-	end
+	local d1 = tonumber(s1:match("[0-9]*"))
+	local d2 = tonumber(s2:match("[0-9]*"))
+	if d1 > d2 then return 1 end
+	if d1 < d2 then return -1 end
+	if s1 > s2 then return 1 end
+	if s1 < s2 then return -1 end
 	return 0
 end
 
@@ -28,6 +26,7 @@ local function test(v1, v2, expect)
 end
 
 local function test_run()
+	test("2.80", "2.79b", 1)
 	test("1.25.12", "1.25.8", 1)
 	test("1.0", "1.0", 0)
 	test("1.0rc1", "1.0rc2", -1)
