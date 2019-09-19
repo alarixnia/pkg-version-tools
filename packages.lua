@@ -291,6 +291,10 @@ return {
 	{
 		wikidata = "Q1457398"
 	},
+	["multimedia/frei0r"] =
+	{
+		wikidata = "Q5501329"
+	},
 	["multimedia/gstreamer1"] =
 	{
 		github = "GStreamer/gstreamer"
@@ -298,6 +302,10 @@ return {
 	["multimedia/libogg"] =
 	{
 		wikidata = "Q63437792"
+	},
+	["multimedia/olive-editor"] =
+	{
+		github = "olive-editor/olive"
 	},
 	["multimedia/vlc"] =
 	{
