@@ -170,6 +170,10 @@ return {
 	{
 		github = "Arisotura/melonDS"
 	},
+	["emulators/nestopia"] =
+	{
+		github = "0ldsk00l/nestopia"
+	},
 	["emulators/qemu"] =
 	{
 		wikidata = "Q624699",
@@ -191,6 +195,14 @@ return {
 	{
 		wikidata = "Q66105134"
 	},
+	["games/etlegacy"] =
+	{
+		github = "etlegacy/etlegacy"
+	},
+	["games/flare-game"] =
+	{
+		github = "flareteam/flare-game"
+	},
 	["games/minetest"] =
 	{
 		wikidata = "Q722334"
@@ -210,6 +222,10 @@ return {
 	["games/redeclipse"] =
 	{
 		github = "redeclipse/base"
+	},
+	["games/wesnoth"] =
+	{
+		wikidata = "Q214142"
 	},
 	["graphics/GraphicsMagick"] =
 	{
@@ -350,9 +366,17 @@ return {
 	{
 		wikidata = "Q1533305"
 	},
+	["security/mbedtls"] =
+	{
+		github = "ARMmbed/mbedtls"
+	},
 	["security/libgcrypt"] =
 	{
 		wikidata = "Q3237868"
+	},
+	["security/libssh2"] =
+	{
+		wikidata = "Q28975111"
 	},
 	["security/putty"] =
 	{
