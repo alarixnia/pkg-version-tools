@@ -299,6 +299,10 @@ return {
 	{
 		wikidata = "Q1017110"
 	},
+	["lang/mono6"] =
+	{
+		wikidata = "Q722656"
+	},
 	["mail/balsa"] =
 	{
 		wikidata = "Q401995"
@@ -4959,7 +4963,7 @@ return {
 	},
 	["net/libtorrent"] =
 	{
-		github = "rakshasa/libtorrent"
+		wikidata = "Q65010579"
 	},
 	["net/libvncserver"] =
 	{
