@@ -27,7 +27,6 @@ return {
 	["audio/exaile"] =
 	{
 		wikidata = "Q947786",
-		freshcode = "exaile"
 	},
 	["audio/faad2"] =
 	{
@@ -102,7 +101,6 @@ return {
 	["chat/bitlbee"] =
 	{
 		wikidata = "Q878823",
-		freshcode = "bitlbee"
 	},
 	["chat/hexchat"] =
 	{
@@ -181,7 +179,6 @@ return {
 	["emulators/qemu"] =
 	{
 		wikidata = "Q624699",
-		freshcode = "qemu"
 	},
 	["emulators/snes9x"] =
 	{
@@ -338,7 +335,6 @@ return {
 	["multimedia/vlc"] =
 	{
 		wikidata = "Q171477",
-		freshcode = "vlc"
 	},
 	["net/filezilla"] =
 	{
@@ -414,7 +410,6 @@ return {
 	["www/lighttpd"] =
 	{
 		wikidata = "Q217765",
-		freshcode = "lighttpd"
 	},
 	["www/lua-curl"] =
 	{
