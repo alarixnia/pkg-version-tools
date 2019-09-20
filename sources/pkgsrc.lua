@@ -25,9 +25,11 @@ local function extract_from_changes(package, file)
 		end
 		if v ~= nil then
 			v = v:match("[%d%a.]*")
-			if not v:match("nb[%d]*$") and
-				   (best_result == nil or version.compare(best_result, v) < 0) then
-				best_result = v
+			if not v:match("nb[%d]*$") then
+				v = version.sanitize(v)
+				if (best_result == nil or version.compare(best_result, v) < 0) then
+					best_result = v
+				end
 			end
 		end
 		line = f:read()
