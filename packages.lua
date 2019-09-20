@@ -196,6 +196,10 @@ return {
 	{
 		wikidata = "Q66105134"
 	},
+	["games/angband"] =
+	{
+		wikidata = "Q244140"
+	},
 	["games/cataclysm-dda"] =
 	{
 		wikidata = "Q17515002"
