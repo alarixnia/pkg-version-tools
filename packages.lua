@@ -83,6 +83,10 @@ return {
 	{
 		wikidata = "Q29024883"
 	},
+	["audio/schismtracker"] =
+	{
+		github = "schismtracker/schismtracker"
+	},
 	["audio/taglib"] =
 	{
 		wikidata = "Q2387630"
@@ -194,6 +198,10 @@ return {
 	["games/7kaa"] =
 	{
 		wikidata = "Q66105134"
+	},
+	["games/cataclysm-dda"] =
+	{
+		wikidata = "Q17515002"
 	},
 	["games/etlegacy"] =
 	{
