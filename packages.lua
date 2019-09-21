@@ -1,4 +1,8 @@
 return {
+	["archivers/libzip"] =
+	{
+		wikidata = "Q6542972"
+	},
 	["devel/glib2"] =
 	{
 		wikidata = "Q1137964"
@@ -61,6 +65,10 @@ return {
 	["audio/lmms"] =
 	{
 		wikidata = "Q201809"
+	},
+	["audio/milkytracker"] =
+	{
+		github = "milkytracker/MilkyTracker"
 	},
 	["audio/mpg123"] =
 	{
@@ -204,6 +212,14 @@ return {
 	{
 		wikidata = "Q17515002"
 	},
+	["games/chocolate-doom"] =
+	{
+		wikidata = "Q67181580"
+	},
+	["games/easyrpg-player"] =
+	{
+		github = "EasyRPG/Player"
+	},
 	["games/etlegacy"] =
 	{
 		github = "etlegacy/etlegacy"
@@ -231,6 +247,10 @@ return {
 	["games/redeclipse"] =
 	{
 		github = "redeclipse/base"
+	},
+	["games/taisei"] =
+	{
+		github = "taisei-project/taisei"
 	},
 	["games/wesnoth"] =
 	{
@@ -295,6 +315,10 @@ return {
 	["graphics/libwebp"] =
 	{
 		wikidata = "Q63437758"
+	},
+	["graphics/openexr"] =
+	{
+		wikidata = "Q61077827"
 	},
 	["graphics/openjpeg"] =
 	{
