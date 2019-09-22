@@ -3,6 +3,10 @@ return {
 	{
 		wikidata = "Q6542972"
 	},
+	["devel/nasm"] =
+	{
+		wikidata = "Q1571077"
+	},
 	["devel/glib2"] =
 	{
 		wikidata = "Q1137964"
@@ -14,6 +18,10 @@ return {
 	["devel/libffi"] =
 	{
 		github = "libffi/libffi"
+	},
+	["devel/rgbds"] =
+	{
+		github = "rednex/rgbds"
 	},
 	["audio/audacious"] =
 	{
@@ -168,6 +176,10 @@ return {
 	{
 		wikidata = "Q479783"
 	},
+	["emulators/dosbox-x"] =
+	{
+		github = "joncampbell123/dosbox-x"
+	},
 	["emulators/mame"] =
 	{
 		wikidata = "Q1054055"
@@ -180,6 +192,10 @@ return {
 	{
 		github = "Arisotura/melonDS"
 	},
+	["emulators/mgba"] =
+	{
+		github = "mgba-emu/mgba"
+	},
 	["emulators/nestopia"] =
 	{
 		github = "0ldsk00l/nestopia"
@@ -187,6 +203,10 @@ return {
 	["emulators/qemu"] =
 	{
 		wikidata = "Q624699",
+	},
+	["emulators/sameboy"] =
+	{
+		github = "LIJI32/SameBoy"
 	},
 	["emulators/snes9x"] =
 	{
@@ -255,6 +275,10 @@ return {
 	["games/wesnoth"] =
 	{
 		wikidata = "Q214142"
+	},
+	["games/widelands"] =
+	{
+		wikidata = "Q1443443"
 	},
 	["graphics/GraphicsMagick"] =
 	{
