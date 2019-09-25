@@ -151,6 +151,10 @@ return {
 	{
 		wikidata = "Q2000469"
 	},
+	["chat/znc"] =
+	{
+		wikidata = "Q8063151"
+	},
 	["converters/fribidi"] =
 	{
 		wikidata = "Q11201268"
@@ -297,6 +301,10 @@ return {
 	["graphics/cairo"] =
 	{
 		wikidata = "Q306026"
+	},
+	["graphics/freeglut"] =
+	{
+		github = "dcnieho/FreeGLUT"
 	},
 	["graphics/freetype2"] =
 	{
