@@ -20,8 +20,8 @@ local function compare_parts(s1, s2)
 end
 
 function compare(v1, v2)
-	local p1 = split(v1)
-	local p2 = split(v2)
+	local p1 = split(v1:gsub("%.0$", ""))
+	local p2 = split(v2:gsub("%.0$", ""))
 	for i = 1, #p1 do
 		if i > #p2 then return 1 end
 		local cmp = compare_parts(p1[i], p2[i])
@@ -44,7 +44,6 @@ function sanitize(v)
 	return v:gsub("[-_]", ".")
 			:gsub("^[-_%a.]*", "")
 			:gsub(" .*", "")
-			:gsub("%.0$", "")
 end
 
 local function test(v1, v2, expect)
