@@ -94,6 +94,14 @@ return {
 	{
 		wikidata = "Q64585145"
 	},
+	["audio/quodlibet"] =
+	{
+		wikidata = "Q1621193"
+	},
+	["audio/qmmp"] =
+	{
+		wikidata = "Q14943878"
+	},
 	["audio/speex"] =
 	{
 		wikidata = "Q29024883"
@@ -252,6 +260,10 @@ return {
 	{
 		github = "flareteam/flare-game"
 	},
+	["games/naev"] =
+	{
+		github = "naev/naev"
+	},
 	["games/minetest"] =
 	{
 		wikidata = "Q722334"
@@ -272,6 +284,10 @@ return {
 	{
 		github = "redeclipse/base"
 	},
+	["games/srb2"] =
+	{
+		github = "STJr/SRB2"
+	},
 	["games/taisei"] =
 	{
 		github = "taisei-project/taisei"
@@ -283,6 +299,10 @@ return {
 	["games/widelands"] =
 	{
 		wikidata = "Q1443443"
+	},
+	["games/xonotic"] =
+	{
+		wikidata = "Q596536"
 	},
 	["graphics/GraphicsMagick"] =
 	{
