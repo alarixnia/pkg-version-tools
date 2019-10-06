@@ -4158,7 +4158,7 @@ return {
 	},
 	["graphics/opencolorio"] =
 	{
-		github = "imageworks/OpenColorIO"
+		github = "AcademySoftwareFoundation/OpenColorIO"
 	},
 	["graphics/osg"] =
 	{
