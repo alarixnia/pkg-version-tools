@@ -15,6 +15,10 @@ return {
 	{
 		github = "GNOME/gobject-introspection"
 	},
+	["devel/libgit2"] =
+	{
+		wikidata = "Q21286731"
+	},
 	["devel/libffi"] =
 	{
 		github = "libffi/libffi"
@@ -48,6 +52,10 @@ return {
 	{
 		wikidata = "Q219848",
 		freshcode = "flac"
+	},
+	["audio/fluidsynth"] =
+	{
+		wikidata = "Q1135600"
 	},
 	["audio/lame"] =
 	{
