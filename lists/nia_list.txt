@@ -1,0 +1,161 @@
+#
+# Packages nia would like to monitor for various reasons.
+#
+# Archiving libraries
+archivers/libzip
+archivers/zziplib
+# Misc important libraries
+devel/glib2
+devel/gobject-introspection
+devel/libgit2
+devel/SDL2
+# Text processing libraries
+textproc/libxslt
+textproc/libxml2
+textproc/yaml-cpp
+# Audio libraries
+audio/faad2
+audio/flac
+audio/fluidsynth
+audio/mpg123
+audio/lame
+audio/libopus
+audio/libsndfile
+audio/libvorbis
+audio/libwildmidi
+audio/openal-soft
+audio/opusfile
+audio/speex
+audio/taglib
+# Multimedia libraries
+multimedia/frei0r
+multimedia/libass
+multimedia/libogg
+multimedia/libvpx
+# Graphics libraries
+graphics/GraphicsMagick
+graphics/exiv2
+graphics/freeglut
+graphics/freetype2
+graphics/lcms2
+graphics/libexif
+graphics/cairo
+graphics/gdk-pixbuf2
+graphics/jpeg
+graphics/opencolorio
+graphics/openexr
+graphics/openjpeg
+graphics/png
+graphics/tiff
+graphics/libwebp
+graphics/libraw
+graphics/librsvg
+graphics/MesaLib
+#graphics/glu
+# PDF libraries
+print/poppler
+# UI toolkits
+x11/gtk3
+x11/wxGTK30
+# Font libraries
+devel/pango
+fonts/harfbuzz
+fonts/fontconfig
+converters/fribidi
+# Fonts
+fonts/koruri-ttf
+fonts/twemoji-color-font-ttf
+# Security libraries
+security/libgcrypt
+security/libssh2
+security/gnutls
+security/mbedtls
+# Languages
+devel/nasm
+lang/mono6
+# Audio applications
+audio/audacity
+audio/audacious
+audio/cmus
+audio/exaile
+audio/lmms
+audio/milkytracker
+audio/musicpd
+audio/quodlibet
+audio/qmmp
+audio/schismtracker
+# Video applications
+multimedia/olive-editor
+multimedia/vlc
+# Chat applications
+chat/bitlbee
+chat/pidgin
+chat/weechat
+chat/irssi
+chat/quassel
+chat/hexchat
+chat/mumble
+# Emulators
+devel/rgbds
+emulators/dosbox
+emulators/dosbox-x
+emulators/dolphin-emu
+emulators/mame
+emulators/mednafen
+emulators/melonds
+emulators/mgba
+emulators/nestopia
+emulators/sameboy
+emulators/snes9x
+emulators/qemu
+# Games
+games/7kaa
+games/angband
+games/cataclysm-dda
+games/devilutionx
+games/easyrpg-player
+games/etlegacy
+games/flare-game
+games/minetest
+games/openmw
+games/openttd
+games/oshu
+games/powder-toy
+games/redeclipse
+games/taisei
+games/wesnoth
+games/widelands
+games/xonotic
+# Graphics programs
+graphics/blender
+graphics/gimp
+graphics/geeqie
+# Internet programs
+mail/balsa
+mail/mutt
+net/get_iplayer
+net/transmission
+net/nmap
+net/remmina
+net/rtorrent
+net/libtorrent
+net/speedtest-cli
+www/seamonkey
+# Editors
+editors/abiword
+# Server software
+net/dnscrypt-proxy2
+net/haproxy
+net/syncthing
+www/lighttpd
+www/thttpd
+www/gitea
+# IRC servers
+chat/anope
+chat/atheme
+chat/inspircd3
+chat/unrealircd
+chat/znc
+# Lua
+textproc/lua-lustache
+www/lua-curl
