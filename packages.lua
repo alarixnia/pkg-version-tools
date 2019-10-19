@@ -479,6 +479,10 @@ return {
 		wikidata = "Q841685",
 		freshcode = "putty"
 	},
+	["textproc/aspell"] =
+	{
+		wikidata = "Q1368325"
+	},
 	["textproc/libxslt"] =
 	{
 		wikidata = "Q6542808"

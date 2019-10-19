@@ -10,6 +10,7 @@ devel/gobject-introspection
 devel/libgit2
 devel/SDL2
 # Text processing libraries
+textproc/aspell
 textproc/libxslt
 textproc/libxml2
 textproc/yaml-cpp
