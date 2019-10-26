@@ -37,7 +37,7 @@ end
 local function best_in_page(json, best_ver)
 	for i = 1, #json do
 		local v = json[i].name
-		if version.valid(v) then
+		if not v:match("^untagged*") and version.valid(v) then
 			v = version.sanitize(v)
 			if version.compare(best_ver, v) < 0 then
 				best_ver = v
