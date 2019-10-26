@@ -499,6 +499,10 @@ return {
 	{
 		wikidata = "Q28714270"
 	},
+	["www/libmicrohttpd"] =
+	{
+		wikidata = "Q21283449"
+	},
 	["www/lighttpd"] =
 	{
 		wikidata = "Q217765",

@@ -141,6 +141,7 @@ net/remmina
 net/rtorrent
 net/libtorrent
 net/speedtest-cli
+www/libmicrohttpd
 www/seamonkey
 # Editors
 editors/abiword
