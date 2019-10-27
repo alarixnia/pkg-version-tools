@@ -7,6 +7,13 @@ local function split(s)
 	return parts
 end
 
+local function strip_zeroes(s)
+	while s:match("%.0$") do
+		s = s:gsub("%.0$", "")
+	end
+	return s
+end
+
 local function compare_parts(s1, s2)
 	local d1 = tonumber(s1:match("[0-9]*"))
 	local d2 = tonumber(s2:match("[0-9]*"))
@@ -20,8 +27,8 @@ local function compare_parts(s1, s2)
 end
 
 function compare(v1, v2)
-	local p1 = split(v1:gsub("%.0$", ""))
-	local p2 = split(v2:gsub("%.0$", ""))
+	local p1 = split(strip_zeroes(v1))
+	local p2 = split(strip_zeroes(v2))
 	for i = 1, #p1 do
 		if i > #p2 then return 1 end
 		local cmp = compare_parts(p1[i], p2[i])
@@ -60,7 +67,7 @@ local function test_run()
 	test("2.80", "2.79b", 1)
 	test("1.25.12", "1.25.8", 1)
 	test("1.0", "1.0", 0)
-	test("1.1.0", "1.1", 0)
+	test("1.1.0.0", "1.1", 0)
 	test("1.0rc1", "1.0rc2", -1)
 	test("9a", "9c", -1)
 	test("0.D", "0.A", 1)
