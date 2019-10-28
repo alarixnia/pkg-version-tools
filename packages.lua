@@ -361,6 +361,11 @@ return {
 		wikidata = "Q580605",
 		freshcode = "gdal"
 	},
+	["geography/qgis"] =
+	{
+		wikidata = "Q1329181",
+		freshcode = "qgis"
+	},
 	["graphics/GraphicsMagick"] =
 	{
 		wikidata = "Q4039670"
@@ -464,6 +469,16 @@ return {
 	{
 		wikidata = "Q722656"
 	},
+	["lang/perl5"] =
+	{
+		wikidata = "Q42478",
+		freshcode = "perl"
+	},
+	["mail/claws-mail"] =
+	{
+		wikidata = "Q1099163",
+		freshcode = "claws"
+	},
 	["mail/balsa"] =
 	{
 		wikidata = "Q401995"
@@ -530,6 +545,10 @@ return {
 	{
 		github = "GNOME/evince",
 		freshcode = "evince"
+	},
+	["print/mupdf"] =
+	{
+		freshcode = "mupdf"
 	},
 	["print/poppler"] =
 	{
@@ -6185,6 +6204,10 @@ return {
 	["sysutils/dosfstools"] =
 	{
 		github = "dosfstools/dosfstools"
+	},
+	["sysutils/duplicity"] =
+	{
+		freshcode = "duplicity"
 	},
 	["sysutils/erlang-goldrush"] =
 	{
