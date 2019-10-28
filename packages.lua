@@ -3,9 +3,23 @@ return {
 	{
 		wikidata = "Q6542972"
 	},
+	["devel/fossil"] =
+	{
+		freshcode = "fossil"
+	},
+	["devel/hdf5"] =
+	{
+		wikidata = "Q61080677",
+		freshcode = "hdf5"
+	},
 	["devel/nasm"] =
 	{
 		wikidata = "Q1571077"
+	},
+	["devel/netcdf"] =
+	{
+		wikidata = "Q67197176",
+		freshcode = "netcdf"
 	},
 	["devel/glib2"] =
 	{
@@ -90,6 +104,11 @@ return {
 	{
 		wikidata = "Q287021"
 	},
+	["audio/musescore"] =
+	{
+		wikidata = "Q240192",
+		freshcode = "musescore"
+	},
 	["audio/musicpd"] =
 	{
 		wikidata = "Q1257936"
@@ -110,6 +129,10 @@ return {
 	{
 		wikidata = "Q14943878"
 	},
+	["audio/qsynth"] =
+	{
+		freshcode = "Q16623583"
+	},
 	["audio/speex"] =
 	{
 		wikidata = "Q29024883"
@@ -121,6 +144,14 @@ return {
 	["audio/taglib"] =
 	{
 		wikidata = "Q2387630"
+	},
+	["cad/librecad"] =
+	{
+		wikidata = "Q1252865"
+	},
+	["cad/qcad"] =
+	{
+		wikidata = "Q683003"
 	},
 	["chat/anope"] =
 	{
@@ -171,6 +202,10 @@ return {
 	{
 		wikidata = "Q8063151"
 	},
+	["converters/dos2unix"] =
+	{
+		freshcode = "dos2unix"
+	},
 	["converters/fribidi"] =
 	{
 		wikidata = "Q11201268"
@@ -187,6 +222,15 @@ return {
 	{
 		wikidata = "Q136775",
 		freshcode = "abiword"
+	},
+	["editors/nano"] =
+	{
+		wikidata = "Q306101",
+		freshcode = "nano"
+	},
+	["editors/tea"] =
+	{
+		github = "psemiletov/tea-qt"
 	},
 	["emulators/dolphin-emu"] =
 	{
@@ -312,9 +356,19 @@ return {
 	{
 		wikidata = "Q596536"
 	},
+	["geography/gdal-lib"] =
+	{
+		wikidata = "Q580605",
+		freshcode = "gdal"
+	},
 	["graphics/GraphicsMagick"] =
 	{
 		wikidata = "Q4039670"
+	},
+	["graphics/ImageMagick"] =
+	{
+		wikidata = "Q1047199",
+		freshcode = "imagemagick"
 	},
 	["graphics/MesaLib"] =
 	{
@@ -339,6 +393,11 @@ return {
 		wikidata = "Q1326617",
 		freshcode = "freetype"
 	},
+	["graphics/gegl"] =
+	{
+		wikidata = "gegl",
+		freshcode = "gegl"
+	},
 	["graphics/gdk-pixbuf2"] =
 	{
 		wikidata = "Q47272781"
@@ -355,6 +414,10 @@ return {
 	["graphics/jpeg"] =
 	{
 		wikidata = "Q131741"
+	},
+	["graphics/krita"] =
+	{
+		wikidata = "Q604945"
 	},
 	["graphics/lcms2"] =
 	{
@@ -375,6 +438,11 @@ return {
 	["graphics/libwebp"] =
 	{
 		wikidata = "Q63437758"
+	},
+	["graphics/opencv"] =
+	{
+		wikidata = "Q165277",
+		freshcode = "opencv"
 	},
 	["graphics/openexr"] =
 	{
@@ -403,6 +471,10 @@ return {
 	["mail/mutt"] =
 	{
 		wikidata = "Q1457398"
+	},
+	["misc/calibre"] =
+	{
+		freshcode = "calibre"
 	},
 	["multimedia/frei0r"] =
 	{
@@ -454,6 +526,11 @@ return {
 	{
 		wikidata = "Q875055"
 	},
+	["print/evince"] =
+	{
+		github = "GNOME/evince",
+		freshcode = "evince"
+	},
 	["print/poppler"] =
 	{
 		wikidata = "Q1347022"
@@ -495,6 +572,11 @@ return {
 	{
 		github = "Olivine-Labs/lustache"
 	},
+	["www/firefox"] =
+	{
+		wikidata = "Q698",
+		freshcode = "firefox"
+	},
 	["www/gitea"] =
 	{
 		wikidata = "Q28714270"
@@ -523,6 +605,10 @@ return {
 	["www/thttpd"] =
 	{
 		wikidata = "Q3266371"
+	},
+	["x11/libxkbcommon"] =
+	{
+		github = "xkbcommon/libxkbcommon"
 	},
 	["x11/wxGTK30"] =
 	{
@@ -6343,6 +6429,11 @@ return {
 	["sysutils/xhyve"] =
 	{
 		github = "mist64/xhyve"
+	},
+	["sysutils/zabbix"] =
+	{
+		wikidata = "Q136722",
+		freshcode = "zabbix"
 	},
 	["sysutils/znapzend"] =
 	{

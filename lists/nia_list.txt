@@ -56,6 +56,7 @@ graphics/MesaLib
 # PDF libraries
 print/poppler
 # UI toolkits
+x11/libxkbcommon
 x11/gtk3
 x11/wxGTK30
 # Font libraries
