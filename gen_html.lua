@@ -104,7 +104,7 @@ for i = 1, #pkg_names do
 	end
 	local pkgsrc_version = versions["pkgsrc"]
 	local pkgsrc_data = {
-		newest = (pkgsrc_version == highest_v),
+		newest = version.compare(pkgsrc_version, highest_v) == 0,
 		version = pkgsrc_version
 	}
 	local other_versions = {}
@@ -112,7 +112,7 @@ for i = 1, #pkg_names do
 		if k ~= "pkgsrc" then
 			table.insert(other_versions, {
 				source = k,
-				newest = (v == highest_v),
+				newest = version.compare(v, highest_v) == 0,
 				version = v
 			})
 		end
