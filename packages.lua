@@ -69,7 +69,8 @@ return {
 	},
 	["audio/fluidsynth"] =
 	{
-		wikidata = "Q1135600"
+		wikidata = "Q1135600",
+		github = "FluidSynth/fluidsynth"
 	},
 	["audio/lame"] =
 	{
@@ -464,6 +465,10 @@ return {
 	["graphics/tiff"] =
 	{
 		wikidata = "Q1017110"
+	},
+	["inputmethod/uim"] =
+	{
+		wikidata = "Q3266653"
 	},
 	["lang/mono6"] =
 	{

@@ -146,6 +146,8 @@ www/libmicrohttpd
 www/seamonkey
 # Editors
 editors/abiword
+# Input method
+inputmethod/uim
 # Server software
 net/dnscrypt-proxy2
 net/haproxy
