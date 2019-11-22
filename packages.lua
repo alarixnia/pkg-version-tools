@@ -1,4 +1,8 @@
 return {
+	["archivers/innoextract"] =
+	{
+		github = "dscharrer/innoextract"
+	},
 	["archivers/libzip"] =
 	{
 		wikidata = "Q6542972"
@@ -29,6 +33,10 @@ return {
 	{
 		github = "GNOME/gobject-introspection"
 	},
+	["devel/libidn2"] =
+	{
+		wikidata = "Q3093289"
+	},
 	["devel/libgit2"] =
 	{
 		wikidata = "Q21286731"
@@ -58,6 +66,10 @@ return {
 	{
 		wikidata = "Q947786",
 	},
+	["audio/faac"] =
+	{
+		github = "knik0/faac"
+	},
 	["audio/faad2"] =
 	{
 		github = "knik0/faad2"
@@ -76,6 +88,10 @@ return {
 	{
 		wikidata = "Q902513"
 	},
+	["audio/libmpdclient"] =
+	{
+		github = "MusicPlayerDaemon/libmpdclient"
+	},
 	["audio/libopus"] =
 	{
 		wikidata = "Q28975307"
@@ -93,6 +109,10 @@ return {
 	{
 		wikidata = "Q16967611"
 	},
+	["audio/libxmp"] =
+	{
+		github = "cmatsuoka/libxmp"
+	},
 	["audio/lmms"] =
 	{
 		wikidata = "Q201809"
@@ -100,6 +120,10 @@ return {
 	["audio/milkytracker"] =
 	{
 		github = "milkytracker/MilkyTracker"
+	},
+	["audio/mpc"] =
+	{
+		github = "MusicPlayerDaemon/mpc"
 	},
 	["audio/mpg123"] =
 	{
@@ -113,6 +137,10 @@ return {
 	["audio/musicpd"] =
 	{
 		wikidata = "Q1257936"
+	},
+	["audio/ncmpc"] =
+	{
+		github = "MusicPlayerDaemon/ncmpc"
 	},
 	["audio/openal-soft"] =
 	{
@@ -145,6 +173,10 @@ return {
 	["audio/taglib"] =
 	{
 		wikidata = "Q2387630"
+	},
+	["audio/xmp"] =
+	{
+		github = "cmatsuoka/xmp-cli"
 	},
 	["cad/librecad"] =
 	{
@@ -312,6 +344,10 @@ return {
 	["games/flare-game"] =
 	{
 		github = "flareteam/flare-game"
+	},
+	["games/gemrb"] =
+	{
+		github = "gemrb/gemrb"
 	},
 	["games/naev"] =
 	{
@@ -6261,6 +6297,10 @@ return {
 	["sysutils/logrotate"] =
 	{
 		github = "logrotate/logrotate"
+	},
+	["sysutils/mc"] =
+	{
+		wikidata = "Q1340000"
 	},
 	["sysutils/meson-tools"] =
 	{

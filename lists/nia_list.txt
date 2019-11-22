@@ -2,12 +2,14 @@
 # Packages nia would like to monitor for various reasons.
 #
 # Archiving libraries
+archivers/innoextract
 archivers/libzip
 archivers/zziplib
 # Misc important libraries
 devel/glib2
 devel/gobject-introspection
 devel/libgit2
+devel/libidn2
 devel/SDL2
 # Text processing libraries
 textproc/aspell
@@ -15,15 +17,18 @@ textproc/libxslt
 textproc/libxml2
 textproc/yaml-cpp
 # Audio libraries
+audio/faac
 audio/faad2
 audio/flac
 audio/fluidsynth
 audio/mpg123
 audio/lame
+audio/libmpdclient
 audio/libopus
 audio/libsndfile
 audio/libvorbis
 audio/libwildmidi
+audio/libxmp
 audio/openal-soft
 audio/opusfile
 audio/speex
@@ -82,10 +87,13 @@ audio/cmus
 audio/exaile
 audio/lmms
 audio/milkytracker
+audio/mpc
 audio/musicpd
+audio/ncmpc
 audio/quodlibet
 audio/qmmp
 audio/schismtracker
+audio/xmp
 # Video applications
 multimedia/olive-editor
 multimedia/vlc
@@ -118,6 +126,7 @@ games/devilutionx
 games/easyrpg-player
 games/etlegacy
 games/flare-game
+games/gemrb
 games/minetest
 games/openmw
 games/openttd
@@ -161,6 +170,8 @@ chat/atheme
 chat/inspircd3
 chat/unrealircd
 chat/znc
+# System utilities
+sysutils/mc
 # Lua
 textproc/lua-lustache
 www/lua-curl
