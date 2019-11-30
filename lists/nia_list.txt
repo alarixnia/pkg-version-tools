@@ -6,8 +6,6 @@ archivers/innoextract
 archivers/libzip
 archivers/zziplib
 # Misc important libraries
-devel/glib2
-devel/gobject-introspection
 devel/libgit2
 devel/libidn2
 devel/SDL2
@@ -23,7 +21,9 @@ audio/flac
 audio/fluidsynth
 audio/mpg123
 audio/lame
+audio/libao
 audio/libmpdclient
+audio/libmysofa
 audio/libopus
 audio/libsndfile
 audio/libvorbis
@@ -31,6 +31,7 @@ audio/libwildmidi
 audio/libxmp
 audio/openal-soft
 audio/opusfile
+audio/speech-dispatcher
 audio/speex
 audio/taglib
 # Multimedia libraries
@@ -63,7 +64,6 @@ print/poppler
 # UI toolkits
 x11/libxkbcommon
 x11/gtk3
-x11/wxGTK30
 # Font libraries
 devel/pango
 fonts/harfbuzz

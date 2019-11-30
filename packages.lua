@@ -88,9 +88,17 @@ return {
 	{
 		wikidata = "Q902513"
 	},
+	["audio/libao"] =
+	{
+		github = "xiph/libao"
+	},
 	["audio/libmpdclient"] =
 	{
 		github = "MusicPlayerDaemon/libmpdclient"
+	},
+	["audio/libmysofa"] =
+	{
+		github = "hoene/libmysofa"
 	},
 	["audio/libopus"] =
 	{
@@ -169,6 +177,10 @@ return {
 	["audio/schismtracker"] =
 	{
 		github = "schismtracker/schismtracker"
+	},
+	["audio/speech-dispatcher"] =
+	{
+		github = "brailcom/speechd"
 	},
 	["audio/taglib"] =
 	{
