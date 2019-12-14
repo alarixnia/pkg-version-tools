@@ -40,7 +40,7 @@ end
 
 function valid(v)
 	v = v:lower()
-	local bad_matches = { "svn", "rc", "dev", "alpha", "beta" }
+	local bad_matches = { "svn", "rc", "dev", "alpha", "beta", "pre" }
 	for i = 1, #bad_matches do
 		if v:match(bad_matches[i]) then return false end
 	end
