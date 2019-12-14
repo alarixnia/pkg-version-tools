@@ -49,6 +49,10 @@ return {
 	{
 		github = "rednex/rgbds"
 	},
+	["audio/ardour"] =
+	{
+		wikidata = "Q640004"
+	},
 	["audio/audacious"] =
 	{
 		wikidata = "Q758685"
@@ -185,6 +189,10 @@ return {
 	["audio/taglib"] =
 	{
 		wikidata = "Q2387630"
+	},
+	["audio/vimpc"] =
+	{
+		github = "boysetsfrog/vimpc"
 	},
 	["audio/xmp"] =
 	{
@@ -344,6 +352,10 @@ return {
 	["games/chocolate-doom"] =
 	{
 		wikidata = "Q67181580"
+	},
+	["games/dhewm3"] =
+	{
+		github = "dhewm/dhewm3"
 	},
 	["games/easyrpg-player"] =
 	{

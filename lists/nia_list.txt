@@ -81,6 +81,7 @@ security/mbedtls
 devel/nasm
 lang/mono6
 # Audio applications
+audio/ardour
 audio/audacity
 audio/audacious
 audio/cmus
@@ -93,6 +94,7 @@ audio/ncmpc
 audio/quodlibet
 audio/qmmp
 audio/schismtracker
+audio/vimpc
 audio/xmp
 # Video applications
 multimedia/olive-editor
@@ -123,6 +125,7 @@ games/7kaa
 games/angband
 games/cataclysm-dda
 games/devilutionx
+games/dhewm3
 games/easyrpg-player
 games/etlegacy
 games/flare-game
