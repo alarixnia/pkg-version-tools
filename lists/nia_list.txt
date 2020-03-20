@@ -6,15 +6,19 @@ archivers/innoextract
 archivers/libzip
 archivers/zziplib
 # Misc important libraries
+devel/bullet
 devel/libgit2
 devel/libidn2
 devel/SDL2
+devel/wayland
+devel/wayland-protocols
 # Text processing libraries
 textproc/aspell
 textproc/libxslt
 textproc/libxml2
 textproc/yaml-cpp
 # Audio libraries
+audio/dumb
 audio/faac
 audio/faad2
 audio/flac
@@ -28,7 +32,6 @@ audio/libopus
 audio/libsndfile
 audio/libvorbis
 audio/libwildmidi
-audio/libxmp
 audio/openal-soft
 audio/opusfile
 audio/speech-dispatcher
@@ -47,7 +50,6 @@ graphics/freetype2
 graphics/lcms2
 graphics/libexif
 graphics/cairo
-graphics/gdk-pixbuf2
 graphics/jpeg
 graphics/opencolorio
 graphics/openexr
@@ -57,13 +59,8 @@ graphics/tiff
 graphics/libwebp
 graphics/libraw
 graphics/librsvg
-graphics/MesaLib
-#graphics/glu
-# PDF libraries
-print/poppler
 # UI toolkits
 x11/libxkbcommon
-x11/gtk3
 # Font libraries
 devel/pango
 fonts/harfbuzz
@@ -80,6 +77,7 @@ security/mbedtls
 # Languages
 devel/nasm
 lang/mono6
+lang/janet
 # Audio applications
 audio/ardour
 audio/audacity
@@ -92,7 +90,6 @@ audio/mpc
 audio/musicpd
 audio/ncmpc
 audio/quodlibet
-audio/qmmp
 audio/schismtracker
 audio/vimpc
 audio/xmp
@@ -107,6 +104,7 @@ chat/irssi
 chat/quassel
 chat/hexchat
 chat/mumble
+chat/tootstream
 # Emulators
 devel/rgbds
 emulators/dosbox
@@ -124,6 +122,7 @@ emulators/qemu
 games/7kaa
 games/angband
 games/cataclysm-dda
+games/corsix-th
 games/devilutionx
 games/dhewm3
 games/easyrpg-player
@@ -137,32 +136,30 @@ games/oshu
 games/powder-toy
 games/redeclipse
 games/taisei
-games/wesnoth
 games/widelands
 games/xonotic
 # Graphics programs
 graphics/blender
 graphics/gimp
-graphics/geeqie
+graphics/imv
 # Internet programs
 mail/balsa
 mail/mutt
 net/get_iplayer
 net/transmission
 net/nmap
-net/remmina
 net/rtorrent
 net/libtorrent
+net/libtorrent-rasterbar
+net/qbittorrent
 net/speedtest-cli
-www/libmicrohttpd
-www/seamonkey
 # Editors
 editors/abiword
 # Input method
 inputmethod/uim
 # Server software
 net/dnscrypt-proxy2
-net/haproxy
+net/pure-ftpd
 net/syncthing
 www/lighttpd
 www/thttpd
@@ -175,6 +172,10 @@ chat/unrealircd
 chat/znc
 # System utilities
 sysutils/mc
+sysutils/neofetch
+misc/hexd
+misc/pixd
+misc/lr
 # Lua
 textproc/lua-lustache
 www/lua-curl

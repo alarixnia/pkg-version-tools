@@ -5,7 +5,7 @@ return {
 	},
 	["archivers/libzip"] =
 	{
-		wikidata = "Q6542972"
+		github = "nih-at/libzip"
 	},
 	["devel/fossil"] =
 	{
@@ -49,6 +49,14 @@ return {
 	{
 		github = "rednex/rgbds"
 	},
+	["devel/wayland"] =
+	{
+		github = "wayland-project/wayland"
+	},
+	["devel/wayland-protocols"] =
+	{
+		github = "wayland-project/wayland-protocols"
+	},
 	["audio/ardour"] =
 	{
 		wikidata = "Q640004"
@@ -65,6 +73,10 @@ return {
 	["audio/cmus"] =
 	{
 		wikidata = "Q1940750"
+	},
+	["audio/dumb"] =
+	{
+		github = "kode54/dumb"
 	},
 	["audio/exaile"] =
 	{
@@ -120,10 +132,6 @@ return {
 	["audio/libwildmidi"] =
 	{
 		wikidata = "Q16967611"
-	},
-	["audio/libxmp"] =
-	{
-		github = "cmatsuoka/libxmp"
 	},
 	["audio/lmms"] =
 	{
@@ -208,7 +216,7 @@ return {
 	},
 	["chat/anope"] =
 	{
-		wikidata = "Q2852313"
+		github = "anope/anope"
 	},
 	["chat/atheme"] =
 	{
@@ -273,8 +281,7 @@ return {
 	},
 	["editors/abiword"] =
 	{
-		wikidata = "Q136775",
-		freshcode = "abiword"
+		wikidata = "Q136775"
 	},
 	["editors/nano"] =
 	{
@@ -339,7 +346,7 @@ return {
 	},
 	["games/7kaa"] =
 	{
-		wikidata = "Q66105134"
+		github = "the3dfxdude/7kaa"
 	},
 	["games/angband"] =
 	{
@@ -348,6 +355,10 @@ return {
 	["games/cataclysm-dda"] =
 	{
 		wikidata = "Q17515002"
+	},
+	["games/corsix-th"] =
+	{
+		wikidata = "Q63241972"
 	},
 	["games/chocolate-doom"] =
 	{
@@ -404,10 +415,6 @@ return {
 	["games/taisei"] =
 	{
 		github = "taisei-project/taisei"
-	},
-	["games/wesnoth"] =
-	{
-		wikidata = "Q214142"
 	},
 	["games/widelands"] =
 	{
@@ -470,12 +477,15 @@ return {
 	},
 	["graphics/gimp"] =
 	{
-		wikidata = "Q8038",
-		freshcode = "gimp"
+		wikidata = "Q8038"
 	},
 	["graphics/geeqie"] =
 	{
 		wikidata = "Q9394384"
+	},
+	["graphics/imv"] =
+	{
+		github = "eXeC64/imv"
 	},
 	["graphics/jpeg"] =
 	{
@@ -503,7 +513,7 @@ return {
 	},
 	["graphics/libwebp"] =
 	{
-		wikidata = "Q63437758"
+		github = "webmproject/libwebp"
 	},
 	["graphics/opencv"] =
 	{
@@ -534,6 +544,10 @@ return {
 	{
 		wikidata = "Q722656"
 	},
+	["lang/janet"] =
+	{
+		github = "janet-lang/janet"
+	},
 	["lang/perl5"] =
 	{
 		wikidata = "Q42478",
@@ -555,6 +569,18 @@ return {
 	["misc/calibre"] =
 	{
 		freshcode = "calibre"
+	},
+	["misc/hexd"] =
+	{
+		github = "FireyFly/hexd"
+	},
+	["misc/pixd"] =
+	{
+		github = "FireyFly/pixd"
+	},
+	["misc/lr"] =
+	{
+		github = "leahneukirchen/lr"
 	},
 	["multimedia/frei0r"] =
 	{
@@ -581,14 +607,17 @@ return {
 		wikidata = "Q300662",
 		freshcode = "filezilla"
 	},
-	["net/haproxy"] =
-	{
-		wikidata = "Q5628948",
-		freshcode = "haproxy"
-	},
 	["net/nmap"] =
 	{
 		wikidata = "Q623332"
+	},
+	["net/pure-ftpd"] =
+	{
+		wikidata = "Q1432307"
+	},
+	["net/qbittorrent"] =
+	{
+		wikidata = "Q285741"
 	},
 	["net/remmina"] =
 	{
@@ -615,13 +644,9 @@ return {
 	{
 		freshcode = "mupdf"
 	},
-	["print/poppler"] =
-	{
-		wikidata = "Q1347022"
-	},
 	["security/gnutls"] =
 	{
-		wikidata = "Q1533305"
+		github = "gnutls/gnutls"
 	},
 	["security/mbedtls"] =
 	{
@@ -5234,6 +5259,10 @@ return {
 	{
 		wikidata = "Q65010579"
 	},
+	["net/libtorrent-rasterbar"] =
+	{
+		github = "arvidn/libtorrent"
+	},
 	["net/libvncserver"] =
 	{
 		github = "LibVNC/libvncserver"
@@ -6337,6 +6366,10 @@ return {
 	["sysutils/nbase"] =
 	{
 		github = "cheusov/nbase"
+	},
+	["sysutils/neofetch"] =
+	{
+		wikidata = "Q28975245"
 	},
 	["sysutils/nnn"] =
 	{
