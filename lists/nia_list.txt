@@ -12,6 +12,7 @@ devel/libidn2
 devel/SDL2
 devel/wayland
 devel/wayland-protocols
+time/libical
 # Text processing libraries
 textproc/aspell
 textproc/libxslt
@@ -42,6 +43,8 @@ multimedia/frei0r
 multimedia/libass
 multimedia/libogg
 multimedia/libvpx
+multimedia/xine-lib
+multimedia/xvidcore
 # Graphics libraries
 graphics/GraphicsMagick
 graphics/exiv2
@@ -58,7 +61,6 @@ graphics/png
 graphics/tiff
 graphics/libwebp
 graphics/libraw
-graphics/librsvg
 # UI toolkits
 x11/libxkbcommon
 # Font libraries
@@ -76,10 +78,12 @@ security/gnutls
 security/mbedtls
 # Languages
 devel/nasm
+lang/elixir
 lang/mono6
 lang/janet
 # Audio applications
 audio/ardour
+audio/amsynth
 audio/audacity
 audio/audacious
 audio/cmus
@@ -89,15 +93,19 @@ audio/milkytracker
 audio/mpc
 audio/musicpd
 audio/ncmpc
+audio/pragha
 audio/quodlibet
 audio/schismtracker
+audio/sndfile-tools
+audio/strawberry
 audio/vimpc
 audio/xmp
 # Video applications
 multimedia/olive-editor
 multimedia/vlc
 # Chat applications
-chat/bitlbee
+chat/bitlbee-discord
+chat/bitlbee-mastodon
 chat/pidgin
 chat/weechat
 chat/irssi
@@ -105,6 +113,7 @@ chat/quassel
 chat/hexchat
 chat/mumble
 chat/tootstream
+chat/srain
 # Emulators
 devel/rgbds
 emulators/dosbox
@@ -117,6 +126,7 @@ emulators/mgba
 emulators/nestopia
 emulators/sameboy
 emulators/snes9x
+emulators/stella
 emulators/qemu
 # Games
 games/7kaa
@@ -135,6 +145,7 @@ games/openttd
 games/oshu
 games/powder-toy
 games/redeclipse
+games/srb2
 games/taisei
 games/widelands
 games/xonotic
@@ -144,7 +155,9 @@ graphics/gimp
 graphics/imv
 # Internet programs
 mail/balsa
+mail/libetpan
 mail/mutt
+net/bandcamp-dl
 net/get_iplayer
 net/transmission
 net/nmap
@@ -153,6 +166,7 @@ net/libtorrent
 net/libtorrent-rasterbar
 net/qbittorrent
 net/speedtest-cli
+security/acmesh
 # Editors
 editors/abiword
 # Input method
@@ -171,11 +185,18 @@ chat/inspircd3
 chat/unrealircd
 chat/znc
 # System utilities
+shells/fish
+shells/mksh
 sysutils/mc
 sysutils/neofetch
 misc/hexd
 misc/pixd
 misc/lr
+x11/hsetroot
+x11/picom
 # Lua
 textproc/lua-lustache
 www/lua-curl
+# Window managers
+wm/i3
+wm/herbstluftwm

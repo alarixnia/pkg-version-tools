@@ -61,6 +61,10 @@ return {
 	{
 		wikidata = "Q640004"
 	},
+	["audio/amsynth"] =
+	{
+		wikidata = "Q4748867"
+	},
 	["audio/audacious"] =
 	{
 		wikidata = "Q758685"
@@ -170,6 +174,10 @@ return {
 	{
 		wikidata = "Q64585145"
 	},
+	["audio/pragha"] =
+	{
+		github = "pragha-music-player/pragha"
+	},
 	["audio/quodlibet"] =
 	{
 		wikidata = "Q1621193"
@@ -182,6 +190,10 @@ return {
 	{
 		freshcode = "Q16623583"
 	},
+	["audio/sndfile-tools"] =
+	{
+		github = "erikd/sndfile-tools"
+	},
 	["audio/speex"] =
 	{
 		wikidata = "Q29024883"
@@ -193,6 +205,10 @@ return {
 	["audio/speech-dispatcher"] =
 	{
 		github = "brailcom/speechd"
+	},
+	["audio/strawberry"] =
+	{
+		github = "strawberrymusicplayer/strawberry"
 	},
 	["audio/taglib"] =
 	{
@@ -250,6 +266,10 @@ return {
 	["chat/quassel"] =
 	{
 		wikidata = "Q921961"
+	},
+	["chat/srain"] =
+	{
+		github = "SrainApp/srain"
 	},
 	["chat/unrealircd"] =
 	{
@@ -540,6 +560,10 @@ return {
 	{
 		wikidata = "Q3266653"
 	},
+	["lang/elixir"] =
+	{
+		wikidata = "Q5362035"
+	},
 	["lang/mono6"] =
 	{
 		wikidata = "Q722656"
@@ -561,6 +585,10 @@ return {
 	["mail/balsa"] =
 	{
 		wikidata = "Q401995"
+	},
+	["mail/libetpan"] =
+	{
+		github = "dinhviethoa/libetpan"
 	},
 	["mail/mutt"] =
 	{
@@ -601,6 +629,18 @@ return {
 	["multimedia/vlc"] =
 	{
 		wikidata = "Q171477",
+	},
+	["multimedia/xine-lib"] =
+	{
+		wikidata = "Q283678",
+	},
+	["multimedia/xvidcore"] =
+	{
+		wikidata = "Q622433",
+	},
+	["net/bandcamp-dl"] =
+	{
+		github = "iheanyi/bandcamp-dl"
 	},
 	["net/filezilla"] =
 	{
@@ -680,6 +720,14 @@ return {
 	["textproc/lua-lustache"] =
 	{
 		github = "Olivine-Labs/lustache"
+	},
+	["wm/i3"] =
+	{
+		wikidata = "Q1652973"
+	},
+	["wm/herbstluftwm"] =
+	{
+		github = "herbstluftwm/herbstluftwm"
 	},
 	["www/firefox"] =
 	{
@@ -930,6 +978,10 @@ return {
 	["chat/bitlbee-discord"] =
 	{
 		github = "sm00th/bitlbee-discord"
+	},
+	["chat/bitlbee-mastodon"] =
+	{
+		github = "kensanata/bitlbee-mastodon"
 	},
 	["chat/bitlbee-facebook"] =
 	{
@@ -3891,9 +3943,9 @@ return {
 	{
 		github = "libretro/snes9x2010"
 	},
-	["emulators/libretro-stella"] =
+	["emulators/stella"] =
 	{
-		github = "libretro/stella-libretro"
+		github = "stella-emu/stella"
 	},
 	["emulators/libretro-vba-next"] =
 	{
@@ -6203,9 +6255,17 @@ return {
 	{
 		github = "joelthelion/autojump"
 	},
+	["shells/fish"] =
+	{
+		wikidata = "Q307263"
+	},
 	["shells/git-sh"] =
 	{
 		github = "rtomayko/git-sh"
+	},
+	["shells/mksh"] =
+	{
+		github = "MirBSD/mksh"
 	},
 	["shells/oksh"] =
 	{
@@ -8332,9 +8392,9 @@ return {
 	{
 		github = "sigmike/autocutsel"
 	},
-	["x11/compton"] =
+	["x11/picom"] =
 	{
-		github = "yshui/compton"
+		github = "yshui/picom"
 	},
 	["x11/eekboard"] =
 	{
