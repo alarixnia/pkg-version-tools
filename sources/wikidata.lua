@@ -62,6 +62,9 @@ function get_version(entity)
 		print(err)
 		return nil
 	end
+	if json.claims.P348 == nil then
+		return nil
+	end
 	local pref = get_preferred_claim(json.claims.P348);
 	if pref == nil then
 		-- return the last valid value if none is preferred
