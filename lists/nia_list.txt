@@ -19,6 +19,7 @@ textproc/libxslt
 textproc/libxml2
 textproc/yaml-cpp
 # Audio libraries
+audio/adplug
 audio/dumb
 audio/faac
 audio/faad2
@@ -181,7 +182,6 @@ www/gitea
 # IRC servers
 chat/anope
 chat/atheme
-chat/inspircd3
 chat/unrealircd
 chat/znc
 # System utilities
