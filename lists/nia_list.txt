@@ -187,6 +187,7 @@ chat/znc
 # System utilities
 shells/fish
 shells/mksh
+sysutils/cfm
 sysutils/mc
 sysutils/neofetch
 misc/hexd
