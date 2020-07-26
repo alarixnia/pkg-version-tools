@@ -194,9 +194,6 @@ misc/pixd
 misc/lr
 x11/hsetroot
 x11/picom
-# Lua
-textproc/lua-lustache
-www/lua-curl
 # Window managers
 wm/i3
 wm/herbstluftwm

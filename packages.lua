@@ -7,6 +7,10 @@ return {
 	{
 		github = "nih-at/libzip"
 	},
+	["archivers/lua-zlib"] =
+	{
+		github = "brimworks/lua-zlib"
+	},
 	["devel/fossil"] =
 	{
 		freshcode = "fossil"
@@ -44,6 +48,82 @@ return {
 	["devel/libffi"] =
 	{
 		github = "libffi/libffi"
+	},
+	["devel/lua-ansicolors"] =
+	{
+		github = "kikito/ansicolors.lua"
+	},
+	["devel/lua-basexx"] =
+	{
+		github = "aiq/basexx"
+	},
+	["devel/lua-busted"] =
+	{
+		github = "Olivine-Labs/busted"
+	},
+	["devel/lua-cliargs"] =
+	{
+		github = "amireh/lua_cliargs"
+	},
+	["devel/lua-cov"] =
+	{
+		github = "keplerproject/luacov"
+	},
+	["devel/lua-coxpcall"] =
+	{
+		github = "keplerproject/coxpcall"
+	},
+	["devel/lua-event"] =
+	{
+		github = "harningt/luaevent"
+	},
+	["devel/lua-fifo"] =
+	{
+		github = "daurnimator/fifo.lua"
+	},
+	["devel/lua-filesystem"] =
+	{
+		github = "keplerproject/luafilesystem"
+	},
+	["devel/lua-fun"] =
+	{
+		github = "luafun/luafun"
+	},
+	["devel/lua-inspect"] =
+	{
+		github = "kikito/inspect.lua"
+	},
+	["devel/lua-loadkit"] =
+	{
+		github = "leafo/loadkit"
+	},
+	["devel/lua-luassert"] =
+	{
+		github = "Olivine-Labs/luassert"
+	},
+	["devel/lua-mediator"] =
+	{
+		github = "Olivine-Labs/mediator_lua"
+	},
+	["devel/lua-penlight"] =
+	{
+		github = "Tieske/penlight"
+	},
+	["devel/lua-posix"] =
+	{
+		github = "luaposix/luaposix"
+	},
+	["devel/lua-rings"] =
+	{
+		github = "keplerproject/rings"
+	},
+	["devel/lua-system"] =
+	{
+		github = "o-lim/luasystem"
+	},
+	["devel/lua-term"] =
+	{
+		github = "hoelzro/lua-term"
 	},
 	["devel/rgbds"] =
 	{
@@ -290,6 +370,10 @@ return {
 	["converters/fribidi"] =
 	{
 		wikidata = "Q11201268"
+	},
+	["converters/lua-iconv"] =
+	{
+		github = "ittner/lua-iconv"
 	},
 	["devel/SDL2"] =
 	{
@@ -717,9 +801,37 @@ return {
 	{
 		wikidata = "Q306240"
 	},
+	["textproc/lua-cmark"] =
+	{
+		github = "jgm/cmark-lua"
+	},
+	["textproc/lua-etlua"] =
+	{
+		github = "leafo/etlua"
+	},
+	["textproc/lua-inifile"] =
+	{
+		github = "bartbes/inifile"
+	},
 	["textproc/lua-lustache"] =
 	{
 		github = "Olivine-Labs/lustache"
+	},
+	["textproc/lua-lyaml"] =
+	{
+		github = "gvvaughan/lyaml"
+	},
+	["textproc/lua-markdown"] =
+	{
+		github = "mpeterv/markdown"
+	},
+	["textproc/lua-rapidjson"] =
+	{
+		github = "xpol/lua-rapidjson"
+	},
+	["textproc/lua-utf8"] =
+	{
+		github = "starwing/luautf8"
 	},
 	["wm/i3"] =
 	{
@@ -749,6 +861,14 @@ return {
 	["www/lua-curl"] =
 	{
 		github = "Lua-cURL/Lua-cURLv3"
+	},
+	["www/lua-http"] =
+	{
+		github = "daurnimator/lua-http"
+	},
+	["www/lua-psl"] =
+	{
+		github = "daurnimator/lua-psl"
 	},
 	["www/seamonkey"] =
 	{
@@ -5715,6 +5835,10 @@ return {
 	{
 		github = "pjenvey/hellanzb"
 	},
+	["parallel/lua-lanes"] =
+	{
+		github = "LuaLanes/lanes"
+	},
 	["parallel/openmp"] =
 	{
 		github = "llvm/llvm-project"
@@ -6338,6 +6462,10 @@ return {
 	["sysutils/cdirip"] =
 	{
 		github = "jozip/cdirip"
+	},
+	["sysutils/cfm"] =
+	{
+		github = "willeccles/cfm"
 	},
 	["sysutils/checkperms"] =
 	{
